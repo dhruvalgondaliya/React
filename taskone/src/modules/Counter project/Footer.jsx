@@ -4,10 +4,9 @@ import './Style.css'
 export default function Footer() {
     return (
         <>
-{/* 
             <div className="footer">
-                <p>This is a simple footer</p>
-            </div> */}
+                <p>Copyright © 2024 Tata Consultancy Services Limited</p>
+            </div>
 
 
         </>
