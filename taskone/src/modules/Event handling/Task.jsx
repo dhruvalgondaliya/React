@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 
 export default function Task() {
+    const [check, setCheck] = useState(false)
+    const handleform = (e) => {
+        e.preventDefault()
+        console.log(check)
+    }
 
     const obj = [
         { id: 1, name: 'Dhruval', age: 23 },
@@ -26,7 +31,13 @@ export default function Task() {
         <>
             <h5>1:Write a program to perform Done & remaining status using checkbox. Onchange event</h5>
             <>
-            
+                <form onSubmit={handleform}>
+                    <label htmlFor="">Checkbox</label>
+                    <input type="checkbox" onChange={(e) => setCheck(e.target.checked)} />
+                    <br /><br />
+                    <button>submit</button>
+                </form>
+                <br /><br />
             </>
 
             <h5>2.Create array & array of object using list & keys.</h5><br />
