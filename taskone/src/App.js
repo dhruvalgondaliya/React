@@ -1,5 +1,7 @@
 import './App.css';
-import FormVel from './modules/Form/FormVel';
+import UncontrolForm from './modules/Form/UncontrolForm'
+// import ControlFrom from './modules/Form/ControlFrom'
+// import FormVel from './modules/Form/FormVel';
 // import Arry from './modules/ConceptArry/Arry';
 // import Task from './modules/Event handling/Task';
 // import ContentOne from './modules/Counter project/ContentOne';
@@ -17,7 +19,9 @@ function App() {
       <Footer/> */}
       {/* <Arry /> */}
       {/* <Task/> */}
-      <FormVel />
+      {/* <FormVel /> */}
+      {/* <ControlFrom/> */}
+      <UncontrolForm/>
     </>
 
   );

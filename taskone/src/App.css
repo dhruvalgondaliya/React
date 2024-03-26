@@ -28,7 +28,29 @@
     border: 1px solid blue;
     border-radius: 10px;
 }
-.Comment-section h3{
+
+.Comment-section h3 {
     margin-top: 10px;
     margin-left: 20px;
 }
+
+.Comment-section p {
+    margin-left: 20px;
+}
+
+/* form Control */
+.error {
+    color: red;
+    font-size: 18px;
+
+}
+
+.form input {
+    width: 250px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(204, 227, 247);
+}
+

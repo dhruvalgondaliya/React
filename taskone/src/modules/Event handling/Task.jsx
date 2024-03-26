@@ -11,8 +11,7 @@ export default function Task() {
         { id: 1, name: 'Dhruval', age: 23 },
         { id: 2, name: 'Krish', age: 20 },
         { id: 3, name: 'Zeel', age: 19 }
-    ];
-
+    ]
 
     const [login, setlogin] = useState(false);
     const handLogin = () => {
