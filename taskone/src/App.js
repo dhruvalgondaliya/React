@@ -1,5 +1,7 @@
 import './App.css';
-import Arry from './modules/ConceptArry/Arry';
+import FormVel from './modules/Form/FormVel';
+// import Arry from './modules/ConceptArry/Arry';
+// import Task from './modules/Event handling/Task';
 // import ContentOne from './modules/Counter project/ContentOne';
 // import Footer from './modules/Counter project/Footer';
 // import Header from './modules/Counter project/Header';
@@ -13,7 +15,9 @@ function App() {
       <ContentOne/>
       <Sidebar />
       <Footer/> */}
-      <Arry />
+      {/* <Arry /> */}
+      {/* <Task/> */}
+      <FormVel />
     </>
 
   );
