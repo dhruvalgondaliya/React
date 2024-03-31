@@ -1,0 +1,54 @@
+.plus {
+  font-size: 30px;
+  color: rgba(137, 43, 226, 0.528);
+}
+
+.demo {
+  width: 300px;
+  margin: auto;
+}
+
+.increment {
+  width: 130px;
+  height: 40px;
+  font-size: 17px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.increment:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.main input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(255, 0, 0, 0.283);
+}
+
+.btn_one {
+  width: 100px;
+  height: 30px;
+  color: black;
+  border: 1px solid rgba(255, 0, 0, 0.256);
+  font-weight: 700;
+  font-size: 19px;
+}
+
+/* higher component  css*/
+.btn_new {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
