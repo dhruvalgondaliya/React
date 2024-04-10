@@ -75,8 +75,6 @@ export default function Boostrap() {
                 </Accordion>
             </Container>
 
-          
-
         </div>
     )
 }

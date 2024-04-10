@@ -1,5 +1,7 @@
 import './App.css';
-import Boostrap from './component/Boostrap';
+import Crud from './Crud';
+// import Boostrap from './component/Boostrap'; 
+// import BoostrapOne from './component/BoostrapOne';
 // import Button from './component/Button';
 // import Hoc from './component/Hoc';
 // import Button from './component/Button';
@@ -30,7 +32,10 @@ function App() {
       {/* <ArrayForm /> */}
       {/* <Button />
       <Hoc /> */}
-      <Boostrap />
+      {/* <Boostrap /> */}
+      {/* <BoostrapOne /> */}
+      {/* <ExtraWork/> */}
+    <Crud/>
 
 
     </>
