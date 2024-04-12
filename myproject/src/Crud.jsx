@@ -1,20 +1,38 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Crud() {
+  const [items, setItems] = useState(() => {
+    const storedData = localStorage.getItem("itemData")
+    return storedData ? JSON.parse(storedData) : []
 
-  const [items, setItems] = useState([])
+  })
   const [inputvalue, setInputValue] = useState({
     name: "",
     password: ""
   })
   const [editItem, setEditItem] = useState(null)
 
+  useEffect(() => {
+    localStorage.setItem("itemData", JSON.stringify(items));
+  })
+
   const handleAddData = () => {
-    setItems([...items, inputvalue])
-    setInputValue({
-      name: "",
-      password: ""
-    })
+
+    if (inputvalue.name === "") {
+      alert("Please Enter Name")
+
+    } else if (inputvalue.password == "") {
+      alert("Please Enter Password")
+    } else {
+      setItems([...items, inputvalue])
+      setInputValue({
+        name: "",
+        password: ""
+      })
+      setEditItem(null)
+
+    }
+
   }
 
   // Delete Data
@@ -37,9 +55,12 @@ export default function Crud() {
 
     setItems(updateData);
     setEditItem(null)
+    // input clear 
+    setInputValue({
+      name: "",
+      password: ""
+    })
   }
-
-
 
   return (
     <>
@@ -56,37 +77,43 @@ export default function Crud() {
         }
       </div>
       <br /><br />
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Password</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        {
-          items.map((item, index) => {
-            return (
-              <>
-                <tbody key={index}>
-                  <tr>
-                    <td >{index + 1}</td>
-                    <td >{item.name}</td>
-                    <td>{item.password}</td>
-                    <td>
-                      <button id='btn-login' onClick={() => handleEdit(index)}>Edit</button>--
-                      <button id='btn-login' onClick={() => handleDelete(index)}>Delete</button></td>
-                  </tr>
-                </tbody>
 
-              </>
-            )
-          })
-        }
+      {
 
-      </table>
+        items.length == 0 ? "" :
+          <table className='border'>
+            <thead>
+              <tr>
+                <th className='border'>No</th>
+                <th className='border'>Name</th>
+                <th className='border'>Password</th>
+                <th className='border'>Action</th>
+              </tr>
+            </thead>
 
+
+            {
+              items.map((item, index) => {
+                return (
+                  <>
+                    <tbody key={index} >
+                      <tr>
+                        <td className='border'>{index + 1}</td>
+                        <td className='border'>{item.name}</td>
+                        <td className='border'>{item.password}</td>
+                        <td className='border'>
+                          <button className='btn border me-2' onClick={() => handleEdit(index)}>Edit</button>
+                          <button className='btn border ' onClick={() => handleDelete(index)}>Delete</button></td>
+                      </tr>
+                    </tbody>
+
+                  </>
+                )
+              })
+            }
+
+          </table>
+      }
     </>
   )
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import Crud from './Crud';
+// import Test from './component/Test';
 // import Boostrap from './component/Boostrap'; 
 // import BoostrapOne from './component/BoostrapOne';
 // import Button from './component/Button';
@@ -36,6 +37,7 @@ function App() {
       {/* <BoostrapOne /> */}
       {/* <ExtraWork/> */}
     <Crud/>
+    {/* <Test/> */}
 
 
     </>
