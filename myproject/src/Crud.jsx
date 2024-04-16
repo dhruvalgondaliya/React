@@ -79,7 +79,6 @@ export default function Crud() {
       <br /><br />
 
       {
-
         items.length == 0 ? "" :
           <table className='border'>
             <thead>
