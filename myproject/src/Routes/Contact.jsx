@@ -4,9 +4,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 
 export default function About() {
-
     const navigate = useNavigate()
-
     const gotoHome = () => {
         navigate('/')
     }
@@ -17,7 +15,7 @@ export default function About() {
                 <h1>I am Contact Page</h1>
                 {/* first method */}
                 {/* <Link to="/Contact">Go To Contact Page</Link> */}
-                
+
                 {/* second method */}
                 <button onClick={gotoHome}>GO TO HOME PAGE</button>
             </div>

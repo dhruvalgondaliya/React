@@ -90,7 +90,7 @@ export default function Crud() {
           <table className='border'>
             <header>
               <tr>
-                <input type="text" value={searchData} placeholder='Serch Data...' onChange={(e) => handleSearch(e)} />
+                <input type="text" value={searchData} placeholder='Serch Data...' onChange={(e) => handleSearch(e)} className='my-2' />
               </tr>
             </header>
             <tr>
