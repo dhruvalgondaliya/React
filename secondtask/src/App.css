@@ -3,13 +3,13 @@
   margin: 0;
 
 }
+
 #box {
   width: 400px;
   height: 300px;
   margin: auto;
   margin-top: 30px;
   padding: 20px;
-  /* border: 1px solid gray; */
   background-color: rgba(0, 0, 0, 0.124);
 }
 
@@ -29,13 +29,38 @@
   font-size: 18px;
 }
 
-table{
+table {
   width: 80%;
   margin: auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-th,td{
+th,
+td {
   padding: 10px;
   font-size: 18px;
+}
+
+#serch {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.124);
+}
+
+.list-unstyled a {
+  color: gray;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#sorting {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  font-size: 16px;
+  border-radius: 5px;
 }

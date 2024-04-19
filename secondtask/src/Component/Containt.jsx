@@ -72,6 +72,7 @@ export default function Crud() {
   return (
     <>
       <div id='box'>
+        <h3 className='text-center'>Data Form</h3>
         <input type="text" placeholder='Enter Your Name' value={inputvalue.name} onChange={(e) => setInputValue({ ...inputvalue, name: e.target.value })} id='text' />
         <br /><br />
         <input type="password" placeholder='Enter Password' value={inputvalue.password} onChange={(e) => setInputValue({ ...inputvalue, password: e.target.value })} id='text' />
@@ -90,13 +91,14 @@ export default function Crud() {
           <table className='border'>
             <header>
               <tr>
-                <input type="text" value={searchData} placeholder='Serch Data...' onChange={(e) => handleSearch(e)} className='my-2' />
+               <td> <input type="text" value={searchData} placeholder='Serch Data...'  onChange={(e) => handleSearch(e)} className='my-2' id="serch"/></td>
+               <td><button onClick={() => handleSort("name")} id="sorting">Sorting</button> <button id="sorting" onClick={() => handleSort("password")} >Sorting</button></td>
               </tr>
             </header>
             <tr>
               <th className='border'>No</th>
-              <th className='border'>Name <button onClick={() => handleSort("name")}>&</button></th>
-              <th className='border'>Password <button onClick={() => handleSort("password")} >&</button></th>
+              <th className='border'>Name </th>
+              <th className='border'>Password </th>
               <th className='border'>Action</th>
             </tr>
 
