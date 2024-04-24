@@ -12,7 +12,7 @@ export default function Crud() {
   const [editItem, setEditItem] = useState(null);
   const [searchData, setSearchData] = useState("");
   const [sort, setSort] = useState(null);
-
+  
   useEffect(() => {
     localStorage.setItem("itemData", JSON.stringify(items));
   });

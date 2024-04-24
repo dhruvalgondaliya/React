@@ -1,24 +1,31 @@
-import './App.css';
-import Crud from './Crud';
-// import { Route, Routes } from 'react-router-dom';
-// import Serching from './component/Serching';
+import React from 'react'
+import { createContext } from 'react'
+// import './App.css'
+import ChildA from './Reducer/ChildA'
+import UseReducer from './Reducer/UseReducer';
 
-// import Home from './Routes/Home';
-// import About from './Routes/About';
-// import Contact from './Routes/Contact';
-// import Router from './component/Router';
+
+const data = createContext()
+const data1 = createContext()
 
 function App() {
+
+  const name = "Test";
+  const age = 25;
+
   return (
     <>
-    <Crud/>
-      {/* <Serching /> */}
-      {/* <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/Contact' element={<Contact />} />
-      </Routes> */}
+      <h2>userContaxt</h2>
+      <data.Provider value={name}>
+        <data1.Provider value={age}>
+          <ChildA />
+        </data1.Provider>
+      </data.Provider >
+      <hr /><hr /><hr />
+
+      <UseReducer />
     </>
-  );
+  )
 }
-export default App;
+export default App
+export { data, data1 }
