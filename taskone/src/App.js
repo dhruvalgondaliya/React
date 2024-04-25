@@ -1,7 +1,5 @@
 import './App.css';
-// import Localstorage from './localbox miner/Localstorage';
-import Session from './localbox miner/Session';
-
+import Localstorage from './localbox miner/Localstorage';
 
 // import UncontrolForm from './modules/Form/UncontrolForm'
 // import ControlFrom from './modules/Form/ControlFrom'
@@ -29,8 +27,8 @@ function App() {
 
 
       {/* project */}
-      {/* <Localstorage /> */}
-      <Session />
+      <Localstorage />
+
     </>
 
   );
