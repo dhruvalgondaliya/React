@@ -1,5 +1,5 @@
 import React from 'react'
-import { createContext } from 'react'
+// import { createContext } from 'react'
 import Counter from './Redux/Counter';
 // import './App.css'
 // import ChildA from './Reducer/ChildA'
@@ -9,13 +9,13 @@ import Counter from './Redux/Counter';
 
 
 
-const data = createContext()
-const data1 = createContext()
+// const data = createContext()
+// const data1 = createContext()
 
 function App() {
 
-  const name = "Test";
-  const age = 25;
+  // const name = "Test";
+  // const age = 25;
 
   return (
     <>
@@ -35,4 +35,4 @@ function App() {
   )
 }
 export default App
-export { data, data1 }
+// export { data, data1 }

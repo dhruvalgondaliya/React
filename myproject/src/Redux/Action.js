@@ -1,14 +1,11 @@
 export const inc = () => {
-    return {
-        type: "Increment"
-    
-    }
-};
-
+    return{
+        type: 'INCREMENT'
+    }  
+}
 
 export const dec = () => {
-    return {
-        type: "Decrement"
+    return{
+        type: 'DECREMENT'
     }
-
 };
