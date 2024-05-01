@@ -96,10 +96,15 @@ td {
 
 
 /* routing css */
-
 .text-center button {
   width: 180px;
   height: 40px;
   border: none;
   font-size: 16px;
+}
+
+
+/* test Crude opration */
+.tab{
+  width: 80%;
 }

@@ -10,6 +10,7 @@ export default function Crud() {
         name: "",
         password: ""
     });
+
     const [editItem, setEditItem] = useState(null);
     const [searchData, setSearchData] = useState("");
     const [sort, setSort] = useState(null);
@@ -64,7 +65,6 @@ export default function Crud() {
     };
 
     const sortedData = sort ? [...items].sort((a, b) => a[sort].localeCompare(b[sort])) : items;
-
     const filterData = sortedData.filter((item) => {
         return item.name.toLowerCase().includes(searchData.toLowerCase()) ||
             item.password.toLowerCase().includes(searchData.toLowerCase());
