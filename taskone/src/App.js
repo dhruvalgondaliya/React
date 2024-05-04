@@ -1,5 +1,7 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Localstorage from './localbox miner/Localstorage';
+import HomePage from './CrudWithRouting/HomePage';
+
 
 // import UncontrolForm from './modules/Form/UncontrolForm'
 // import ControlFrom from './modules/Form/ControlFrom'
@@ -10,6 +12,10 @@ import Localstorage from './localbox miner/Localstorage';
 // import Footer from './modules/Counter project/Footer';
 // import Header from './modules/Counter project/Header';
 // import Sidebar from './modules/Counter project/SideBar';
+
+
+// second project
+// import NavBar from './CrudWithRouting/NavBar';
 
 
 function App() {
@@ -26,7 +32,12 @@ function App() {
       {/* <UncontrolForm/> */}
 
       {/* project */}
-      <Localstorage />
+      {/* <Localstorage /> */}
+
+      {/* <NavBar /> */}
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+      </Routes>
 
     </>
 

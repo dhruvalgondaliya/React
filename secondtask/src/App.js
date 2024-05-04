@@ -1,13 +1,15 @@
 // import logo from './logo.svg';y
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Home from './Component/Home';
-import Data from './Serching Project/Data'
+
+import Home from './CrudWithRouting/Home'
 
 function App() {
   return (
     <>
-      {/* <Home/> */}
-      <Data />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </>
   );
 }

@@ -10,8 +10,8 @@ export default function Counter() {
   return (
     <>
       <h2>Counter: {count}</h2>
-      <button onClick={() => dispatch(inc())}>Increment</button>
-      <button onClick={() => dispatch(dec())}>Decrement</button>
+      <button onClick={() => dispatch(inc(5))}>Increment</button>
+      <button onClick={() => dispatch(dec(2))}>Decrement</button>
     </>
   );
 }
