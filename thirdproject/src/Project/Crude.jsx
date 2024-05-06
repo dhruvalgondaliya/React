@@ -72,7 +72,7 @@ export default function Crud() {
 
     return (
         <>
-            <h2 className='text-center mt-5'>localStorage Data</h2>
+            <h2 className='text-center mt-5'>Crude Opration </h2>
             <div id='box'>
                 <input type="text" placeholder='Enter Your Name' value={inputvalue.name} onChange={(e) => setInputValue({ ...inputvalue, name: e.target.value })} id='text' />
                 <br /><br />

@@ -1,6 +1,8 @@
 import React from 'react'
+import Practice from './Extra/Practice'
+// import New from './New'
 // import { createContext } from 'react'
-import Counter from './Redux/Counter';
+// import Counter from './Redux/Counter';
 // import './App.css'
 // import ChildA from './Reducer/ChildA'
 // import UseReducer from './Reducer/UseReducer';
@@ -29,8 +31,9 @@ function App() {
     <UseReducer /> */}
       {/* <Test/> */}
       {/* <Crud/> */}
-      <Counter />
-
+      {/* <Counter /> */}
+      {/* <New/> */}
+      <Practice />
     </>
   )
 }

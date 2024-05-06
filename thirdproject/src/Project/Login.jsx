@@ -42,7 +42,7 @@ export default function Login() {
     <div>
       <NavBar />
 
-      <form id='user-info'>
+      <form id='user-info' className='mt-5'>
         <h3>Login</h3>
         <input type="text" name="name" placeholder="Name" value={inputValue.name} onChange={(e) => setInputValue({ ...inputValue, name: e.target.value })} /> <br /><br />
         <input type="password" name="password" placeholder="Password" value={inputValue.password} onChange={(e) => setInputValue({ ...inputValue, password: e.target.value })} /><br /><br />

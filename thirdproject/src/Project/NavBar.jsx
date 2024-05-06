@@ -14,8 +14,8 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link><Link to="/" id="new">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/about" id="new">About Us</Link></Nav.Link>
-            <Nav.Link><Link to="/contact" id="new">Contact Us</Link></Nav.Link>
+            <Nav.Link><Link to="/AboutUs" id="new">About Us</Link></Nav.Link>
+            <Nav.Link><Link to="/ContactUs" id="new">Contact Us</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <NavDropdown title="User" id="navbarScrollingDropdown" className='User'>
