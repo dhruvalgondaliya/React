@@ -1,5 +1,7 @@
 import React from 'react'
-import Practice from './Extra/Practice'
+// import Practice from './Extra/Practice'
+// import OneMore from './Extra/OneMore'
+import ToDoList from './Extra/ToDoList'
 // import New from './New'
 // import { createContext } from 'react'
 // import Counter from './Redux/Counter';
@@ -33,7 +35,9 @@ function App() {
       {/* <Crud/> */}
       {/* <Counter /> */}
       {/* <New/> */}
-      <Practice />
+      {/* <Practice /> */}
+      {/* <OneMore /> */}
+      <ToDoList />
     </>
   )
 }

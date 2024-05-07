@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+table {
+    width: 60%;
+    height: auto;
+    margin: auto;
+
+}
+
+th,
+td {
+    padding: 7px;
+}
+
+input {
+    width: 250px;
+    padding: 5px;
+}
+
+.more {
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+.new{
+    width: 30px;
+    height: 34px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+}
+
+.box{
+    width: 300px;
+    height:150px;
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+}
