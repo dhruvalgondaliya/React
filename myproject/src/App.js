@@ -1,7 +1,11 @@
 import React from 'react'
 // import Practice from './Extra/Practice'
 // import OneMore from './Extra/OneMore'
-import ToDoList from './Extra/ToDoList'
+// import ToDoList from './Extra/ToDoList'
+import Display from './ToDo/Display'
+import Input from './ToDo/Input'
+// import DisplayTO from './ToDo/DisplayTO'
+// import OneNew from './Extra/OneNew'
 // import New from './New'
 // import { createContext } from 'react'
 // import Counter from './Redux/Counter';
@@ -37,7 +41,14 @@ function App() {
       {/* <New/> */}
       {/* <Practice /> */}
       {/* <OneMore /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      <Input />
+      
+      <br />
+      <Display />
+
+      {/* <OneNew /> */}
+
     </>
   )
 }
