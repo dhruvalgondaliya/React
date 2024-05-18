@@ -52,8 +52,6 @@ function App() {
 
   return (
     <>
-
-
       {/* <h1>Real Time Database</h1>
       <button onClick={putData}>Pass Data</button><br /><br />
       <button onClick={putsec}>Pass sec Data</button><br /><br />

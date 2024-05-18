@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.box {
+  width: 360px;
+  height: auto;
+  border: 1px solid;
+  margin: auto;
+  padding: 30px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+}
+
+.add {
+  width: 100px;
+  height: 30px;
+  border: none;
+  margin-top: 13px;
+}
+
+.disp {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  margin: auto  ;
+}
+
+.element {
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 5px;
+}
