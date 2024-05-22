@@ -2,8 +2,9 @@ import React from 'react'
 // import Practice from './Extra/Practice'
 // import OneMore from './Extra/OneMore'
 // import ToDoList from './Extra/ToDoList'
-import Display from './ToDo/Display'
-import Input from './ToDo/Input'
+// import Display from './ToDo/Display'
+// import Input from './ToDo/Input'
+import Onclick from './Extra/Onclick'
 // import DisplayTO from './ToDo/DisplayTO'
 // import OneNew from './Extra/OneNew'
 // import New from './New'
@@ -14,7 +15,6 @@ import Input from './ToDo/Input'
 // import UseReducer from './Reducer/UseReducer';
 // import Test from './Test';
 // import Crud from './Crud';
-
 
 
 // const data = createContext()
@@ -42,12 +42,12 @@ function App() {
       {/* <Practice /> */}
       {/* <OneMore /> */}
       {/* <ToDoList /> */}
-      <Input />
-      
-      <br />
-      <Display />
-
+      {/* <Input /> */}
+      {/* <br /> */}
+      {/* <Display /> */}
       {/* <OneNew /> */}
+
+      <Onclick/>
 
     </>
   )

@@ -54,7 +54,6 @@ function App() {
       {/* <Counter/> */}
 
       <Input/>
-
       <br/>
       <Display/>
     </>

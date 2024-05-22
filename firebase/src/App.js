@@ -1,6 +1,6 @@
 // import database from './firebase'
 // import { set, ref } from 'firebase/database'
-import { getFirestore, addDoc, collection } from 'firebase/firestore'
+import { getFirestore, addDoc, collection, doc, getDoc } from 'firebase/firestore'
 import './App.css';
 import app from './firebase';
 
@@ -37,30 +37,37 @@ function App() {
 
   const adddocument = () => {
     addDoc(collection(fireStore, "User"), {
-      name: "Test",
+      name: "Dhruval",
       age: 20
     })
   }
 
   const subCollection = () => {
-    addDoc(collection(fireStore, "User/fbrm6Pz2WYhltWwyrj7n/SecondUser"), {
+    addDoc(collection(fireStore, "User/Rj9jPhHgWofy8l7abg09/SecondUser"), {
        name:'hello',
+       flage:true,
        age:20
     })
   }
 
 
+  const getCollection = async () => {
+    const ref = doc(fireStore, "User/fbrm6Pz2WYhltWwyrj7n/SecondUser", "b79n7y8yx3P8LNBCZPMJ")
+    const snap = await getDoc(ref)
+    console.log(snap.data())
+  }
+
   return (
     <>
       {/* <h1>Real Time Database</h1>
       <button onClick={putData}>Pass Data</button><br /><br />
-      <button onClick={putsec}>Pass sec Data</button><br /><br />
-      <button onClick={putthird}>Pass third Data</button> */}
+      <button onClick={putsec}>Pass sec Data</button><br /><br /> */}
+      {/* <button onClick={putthird}>Pass third Data</button> */}
 
       <h1>collection Type Data</h1>
       <button onClick={adddocument}>ADD collection</button>
       <button onClick={subCollection}>ADD subCollection</button>
-
+      <button onClick={getCollection}>SaveData</button>
     </>
   );
 }
