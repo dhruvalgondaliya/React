@@ -1,0 +1,25 @@
+table {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto !important;
+}
