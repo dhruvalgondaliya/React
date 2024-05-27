@@ -1,17 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./assete/download.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.form-container {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 table {
     width: 70%;
     height: auto;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-    
-}
-
-form {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    padding: 40px;
 }
 
 input {
@@ -22,4 +36,13 @@ input {
 input[type="radio"],
 input[type="checkbox"] {
     width: auto !important;
+    margin-left: 13px;
+}
+
+.new-btn{
+    width: 100px;
+    height: 30px;
+    margin: 5px 3px;
+    border: 1px solid;
+    border-radius: 5px;
 }
