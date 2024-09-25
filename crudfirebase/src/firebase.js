@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore} from "firebase/firestore";
+// import { getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDWSqZFP_3Wgkdq4bbuyDN1N025Ddlcg4k",
@@ -13,5 +13,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getFirestore(app);
-export default database;
+export default app;
+
+// send data in emial and password store
+// const database = getFirestore(app);
+// export default database;

@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    background: url('./assete/download.jpeg') no-repeat center center fixed;
-    background-size: cover;
-}
 
 .form-container {
     width: 500px;
